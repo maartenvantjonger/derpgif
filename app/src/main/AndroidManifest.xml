@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mvt.derpgif">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Leanback"
+        android:allowBackup="false">
+
+        <activity android:name="com.mvt.derpgif.MainActivity"
+            android:logo="@drawable/ic_launcher"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
